@@ -1,7 +1,8 @@
 import React, { useState, useMemo } from 'react';
 import camera from '../../assets/camera.svg';
-import './new.style.css'
 import api from '../../services/api';
+
+import './new.style.css';
 
 export default function New({history}) {
    const [company, setCompany] = useState('');
@@ -63,7 +64,7 @@ export default function New({history}) {
             value={price}
          />
 
-         <button type="submit">Salvar</button>
+         <button className="btn" type="submit">Salvar</button>
       </form>
 
 
